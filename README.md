@@ -7,7 +7,7 @@ A markdown parser written using the Haskell language and the Stack framework.
 ## Approach
 It uses an abstract syntax tree with functors, applicatives and alternatives from the standard haskell libraries.
 
-Features 
+## Features 
 - [x] Headers (e.g., '# H1', '## H2')
 - [x] Paragraphs 
 - [x] Basic Lists 
@@ -18,7 +18,7 @@ Features
 - [x] Codeblocks
 - [x] File IO
 
-WIP Features 
+## WIP  
 - [ ] Nested List 
 - [ ] Inline font styling
 - [ ] Strikethrough
