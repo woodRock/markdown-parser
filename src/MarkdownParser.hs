@@ -159,4 +159,5 @@ file = File <$> lines
 parseFile :: FilePath -> Parser a -> IO (Maybe a)
 parseFile fileName parser = do
   input <- readFile fileName
-  return (snd <$> runParser parser input)
+  let res = snd <$> runParser parser input
+  return res

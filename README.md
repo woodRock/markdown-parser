@@ -1,13 +1,27 @@
 # markdown-parser
+
 ![Haskell CI](https://github.com/woodRock/markdown-parser/workflows/Haskell%20CI/badge.svg)
 
-## Details
 A markdown parser written using the Haskell language and the Stack framework.
 
-## Approach
 It uses an abstract syntax tree with functors, applicatives and alternatives from the standard haskell libraries.
 
+## Running 
+
+Open the interactive Haskell intepreter with the `MarkdownParser.hs` module.
+
+```bash
+ghci MarkdownParser.hs
+```
+
+Run this line within the interactive terminal.
+
+```hs
+parseFile "../test/markdown/blockquotes.md" file
+```
+
 ## Features 
+
 - [x] Headers (e.g., '# H1', '## H2')
 - [x] Paragraphs 
 - [x] Basic Lists 
@@ -17,8 +31,6 @@ It uses an abstract syntax tree with functors, applicatives and alternatives fro
 - [x] Blockquotes
 - [x] Codeblocks
 - [x] File IO
-
-## WIP  
 - [ ] Nested List 
 - [ ] Inline font styling
 - [ ] Strikethrough
